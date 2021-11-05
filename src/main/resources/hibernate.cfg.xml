@@ -27,5 +27,10 @@
         <mapping class="ru.java.manytomany.Person" />
         <mapping class="ru.java.manytomany.hwmm.Author" />
         <mapping class="ru.java.manytomany.hwmm.Book" />
+        <mapping class="ru.java.lazy.Category" />
+        <mapping class="ru.java.lazy.Task" />
+        <mapping class="ru.java.lazy.Category" />
+        <mapping class="ru.java.lazy.hwlazy.Mark" />
+        <mapping class="ru.java.lazy.hwlazy.Model" />
     </session-factory>
 </hibernate-configuration>
