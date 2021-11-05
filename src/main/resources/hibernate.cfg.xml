@@ -23,5 +23,9 @@
         <mapping class="ru.java.tomany.User" />
         <mapping class="ru.java.tomany.hw.MarkCar" />
         <mapping class="ru.java.tomany.hw.ModelCar" />
+        <mapping class="ru.java.manytomany.Address" />
+        <mapping class="ru.java.manytomany.Person" />
+        <mapping class="ru.java.manytomany.hwmm.Author" />
+        <mapping class="ru.java.manytomany.hwmm.Book" />
     </session-factory>
 </hibernate-configuration>
