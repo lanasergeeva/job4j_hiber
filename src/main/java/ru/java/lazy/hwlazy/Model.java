@@ -26,7 +26,6 @@ public class Model {
         return model;
     }
 
-
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -36,12 +35,12 @@ public class Model {
             return false;
         }
         Model model = (Model) o;
-        return id == model.id && Objects.equals(name, model.name) && Objects.equals(mark, model.mark);
+        return id == model.id;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, mark);
+        return Objects.hash(id);
     }
 
     @Override

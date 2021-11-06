@@ -64,17 +64,18 @@ public class Mark {
             return false;
         }
         Mark mark = (Mark) o;
-        return id == mark.id && Objects.equals(name, mark.name) && Objects.equals(models, mark.models);
+        return id == mark.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 
     public void addModel(Model model) {
         this.models.add(model);
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, name, models);
-    }
 
     @Override
     public String toString() {
