@@ -29,8 +29,14 @@
         <mapping class="ru.java.manytomany.hwmm.Book" />
         <mapping class="ru.java.lazy.Category" />
         <mapping class="ru.java.lazy.Task" />
-        <mapping class="ru.java.lazy.Category" />
         <mapping class="ru.java.lazy.hwlazy.Mark" />
         <mapping class="ru.java.lazy.hwlazy.Model" />
+        <mapping class="ru.java.category.City" />
+        <mapping class="ru.java.category.Human" />
+
+        <mapping class="ru.java.cars.Car" />
+        <mapping class="ru.java.cars.Driver" />
+        <mapping class="ru.java.cars.Engine" />
+
     </session-factory>
 </hibernate-configuration>
