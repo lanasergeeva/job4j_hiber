@@ -38,5 +38,8 @@
         <mapping class="ru.java.cars.Driver" />
         <mapping class="ru.java.cars.Engine" />
 
+        <mapping class="ru.java.hql.Student"/>
+        <mapping class="ru.java.hql.Candidate"/>
+
     </session-factory>
 </hibernate-configuration>
