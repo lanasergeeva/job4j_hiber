@@ -16,15 +16,15 @@ public class HbRunStudent {
             SessionFactory sf = new MetadataSources(registry).buildMetadata().buildSessionFactory();
             Session session = sf.openSession();
             session.beginTransaction();
-/*
+
             Student one = Student.of("Alex", 21, "Moscow");
             Student two = Student.of("Nikolay", 28, "Saint-Petersburg");
             Student three = Student.of("Nikita", 25, "Kaliningrad");
 
             session.save(one);
             session.save(two);
-            session.save(three);*/
-/*
+            session.save(three);
+
             Query query = session.createQuery("from Student");
             for (Object st : query.list()) {
                 System.out.println(st);
@@ -39,11 +39,11 @@ public class HbRunStudent {
             query2.executeUpdate();
 
             Query query3 = session.createQuery("from Student s where s.id = 1");
-            System.out.println(query3.uniqueResult());*/
+            System.out.println(query3.uniqueResult());
 
             session.getTransaction().commit();
             session.close();
-        }  catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         } finally {
             StandardServiceRegistryBuilder.destroy(registry);
