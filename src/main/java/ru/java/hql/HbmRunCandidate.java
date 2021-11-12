@@ -7,6 +7,8 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.query.Query;
 
+import java.util.List;
+
 
 public class HbmRunCandidate {
     public static void main(String[] args) {
@@ -42,9 +44,10 @@ public class HbmRunCandidate {
             Query query3 = session.createQuery("from Candidate c where c.id = 1");
             System.out.println(query3.uniqueResult());
 
-            Query query4 = session.createQuery("from Candidate c where c.name = :fName");
-            query4.setParameter("fName", "Victor");
-            System.out.println(query4.uniqueResult());
+            List<Candidate> victorName = session
+                    .createQuery("from Candidate c where c.name = :fName")
+                    .setParameter("fName", "Victor").list();
+            System.out.println(victorName);
 
             session.createQuery("delete from Candidate where id = :fId")
                     .setParameter("fId", 2);
