@@ -39,7 +39,13 @@
         <mapping class="ru.java.cars.Engine" />
 
         <mapping class="ru.java.hql.Student"/>
+        <mapping class="ru.java.hql.Account"/>
+        <mapping class="ru.java.hql.BookSec"/>
         <mapping class="ru.java.hql.Candidate"/>
+
+        <mapping class="ru.java.hql.hwfetch.CandidateHW"/>
+        <mapping class="ru.java.hql.hwfetch.BaseOfVacancies"/>
+        <mapping class="ru.java.hql.hwfetch.Vacancy"/>
 
     </session-factory>
 </hibernate-configuration>
